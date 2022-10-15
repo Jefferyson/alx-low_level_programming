@@ -15,9 +15,9 @@ int main(void)
 		putchar(x + '0');
 		x++;
 	}
-	while (y < 'f')
+	while (y <= 'f')
 	{
-		 putchar(y);
+		putchar(y);
 		y++;
 	}
 	putchar('\n');
