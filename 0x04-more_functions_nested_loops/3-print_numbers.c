@@ -9,7 +9,7 @@
 
 void print_numbers(void)
 {
-	int x;
+	char x;
 
 	if (x >= '0'; x <= '9')
 	{
