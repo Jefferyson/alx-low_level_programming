@@ -9,11 +9,11 @@
 
 void print_numbers(void)
 {
-	char x;
+	cha0r x;
 
 	if (x >= '0'; x <= '9')
 	{
-		putchar(x);
+		_putchar(x);
 	}
-	putchar('\n');
+	_putchar('\n');
 }
