@@ -9,7 +9,7 @@
  * Return: 0
  */
 
-print_array(int *a, int n)
+void print_array(int *a, int n)
 {
 	int x;
 
