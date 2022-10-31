@@ -11,17 +11,22 @@
 
 void print_diagsums(int *a, int size)
 {
-	int i, j, p, 1 = 0, r = 0;
+	int n = 0, sum = 0;
+	int *ptr = a;
 
-	for (i = 0; i < size; i++)
+	for (n = size; n > 0; n--)
 	{
-		p = (i * size) + i;
-		1 += *(a + p);
+		sum += *ptr;
+		ptr += size + 1;
 	}
-	for (j = 0; j < size; j++)
+	printf("%d, ", sum);
+
+	sum = 0;
+	ptr = a + size - 1;
+	for (n = size; n > 0; n--)
 	{
-		p = (j * size) + (size - 1 - j);
-		r += *(a + p);
+		sum += *ptr;
+		ptr += size - 1;
 	}
-	printf("%i, %i\n", 1, r);
+	printf("%d\n", sum);
 }
