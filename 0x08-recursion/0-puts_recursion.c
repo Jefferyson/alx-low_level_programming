@@ -3,6 +3,8 @@
 /**
  * _puts_recursion - function that prints a string
  * @s: the string to be printed
+ *
+ * Return: void
  */
 void _puts_recursion(char *s)
 {
@@ -10,5 +12,9 @@ void _puts_recursion(char *s)
 	{
 		_print_rev_recursion(s + 1);
 		_putchar(*s);
+	}
+	else
+	{
+		_putchar('\n');
 	}
 }
