@@ -25,13 +25,7 @@ int check(int x, int y)
  */
 int _sqrt_recursion(int n)
 {
-	int root = 0;
-
-	if (n < 0)
-		return (-1);
-
-	if (n == 1)
-		return (1);
-
-	return (find_sqrt(n, root));
+	if (n == 0)
+		return (0);
+	return (check(1, n));
 }
